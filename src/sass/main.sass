@@ -6,6 +6,7 @@
 body
 	color: #000
 	font-family: 'Montserrat', sans-serif
+	overflow-x: hidden
 
 a
 	&:link
@@ -20,6 +21,8 @@ a
 	color: $accent-2
 	padding: 10px 35px
 	transition: .3s
+	background-color: transparent
+	cursor: pointer
 	&:hover
 		color: #fff
 		background-color: $accent-2
@@ -29,6 +32,17 @@ a
 	padding: 0
 	&__line
 		display: flex
+	&__address
+		color: $accent
+		li:first-child
+			padding-bottom: 20px
+		a
+			color: $accent
+			&:hover
+				color: $accent-2
+		li:last-child
+			a
+				color: $accent-2
 		
 
 .page-header
@@ -57,6 +71,12 @@ a
 			text-transform: uppercase
 			margin-left: 20px
 			color: #000
+
+.bottom-logo
+	flex-direction: column
+	align-items: center
+	h1
+		margin: 0
 
 .navigation
 	justify-content: flex-end
@@ -153,34 +173,42 @@ a
 .section-page
 	padding: 180px 0
 
-	.section__header
+.section__header
+	text-transform: uppercase
+	display: inline-block
+	&__text
+		display: block
+		font-weight: 300
+		font-size: 18px
+	&__header
+		font-size: 45px
+		letter-spacing: 3px
+		position: relative
+		padding: 30px 0 40px
 		text-align: center
-		text-transform: uppercase
-		&__text
-			display: block
-			font-weight: 300
-			font-size: 18px
-		&__header
-			font-size: 45px
-			letter-spacing: 3px
-			position: relative
-			padding: 30px 0 40px
-			&:after,
-			&:before
-				position: absolute
-				z-index: 1
-				content: ''
-				border: 3px solid #000
-				left: 35%
-				right: 35%
-			&:after
-				top: 0
-				height: 38%
-				border-bottom: none
-			&:before
-				bottom: 0
-				height: 28%
-				border-top: none
+		&:after,
+		&:before
+			position: absolute
+			z-index: 1
+			content: ''
+			border: 3px solid #000
+			width: 320px
+			left: 50%
+			transform: translateX(-50%)
+		&:after
+			top: 0
+			height: 38%
+			border-bottom: none
+		&:before
+			bottom: 0
+			height: 28%
+			border-top: none
+	&_center
+		text-align: center
+		display: flex
+		justify-content: center
+	&_left
+		text-align: left
 .row__section
 	padding: 100px 0
 .product
@@ -254,6 +282,76 @@ a
 			transform: scale(1.1)
 		img
 			width: 600px
+
+.service
+	padding: 50px 0
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		background: url('../img/bg-left.png') no-repeat
+		top: -10rem
+		bottom: -22rem
+		left: 0
+		width: 300px
+	&_img
+		margin-top: -23em
+	&_row
+		padding: 60px 0
+
+.form
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	&__input
+		width: 48%
+	&__textarea
+		width: 100%
+	&__input,
+	&__textarea
+		border: 1px solid #e1e1e1
+		font-family: 'Montserrat', sans-serif
+		padding: 10px 15px
+		font-size: 14px
+		margin-bottom: 20px
+
+.contact
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		background: url('../img/bg-right.png') no-repeat
+		top: -40rem
+		bottom: -20rem
+		right: 0
+		width: 400px
+
+.button-wrapper
+	text-align: center
+
+.page-footer
+	padding: 130px 0 40px
+.copyright
+	p
+		font-size: 13px
+		color: $accent
+		a
+			color: $accent
+			&:hover
+				color: $accent-2
+
+.social
+
+	&__item
+		&:not(:last-child)
+			margin-right: 20px
+	&__link
+		color: lighten($accent,20)
+		display: inline-block
+		font-size: 22px
+		transition: .3s
+		&:hover
+			color: $accent-2
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
