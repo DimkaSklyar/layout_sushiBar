@@ -58,7 +58,7 @@ gulp.task('sass', function(){
 			suffix: ".min",
 			prefix: ""
 		}))
-		.pipe(autoprefixer({overrideBrowserslist: autoprefixBrowsers }))
+		.pipe(autoprefixer({browsers: autoprefixBrowsers }))
 		.pipe(cleancss({level: { 1: { specialComments: 0 } } }))
 		.pipe(gulp.dest('src/css'))
 		.pipe(browsersync.reload({stream: true}))
@@ -79,7 +79,7 @@ gulp.task('js', function() {
 
 gulp.task('watch', gulp.series('sass','js','browser-sync', function(done) {
 	gulp.watch('src/sass/**/*.sass', gulp.parallel('sass'));
-	//gulp.watch(['libs/**/*.js', 'src/js/common.js'], gulp.parallel('js'));
+	gulp.watch(['libs/**/*.js', 'src/js/common.js'], gulp.parallel('js'));
 	gulp.watch('src/*.html');
   done();
 }));

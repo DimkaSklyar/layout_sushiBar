@@ -14,6 +14,9 @@ a
 		text-decoration: none
 	&:active
 
+.main-page
+	overflow: hidden
+
 .btn
 	display: inline-block
 	text-transform: uppercase
@@ -71,6 +74,8 @@ a
 			text-transform: uppercase
 			margin-left: 20px
 			color: #000
+			+media-breakpoint-down(lg)
+				font-size: 22px
 
 .bottom-logo
 	flex-direction: column
@@ -140,6 +145,8 @@ a
 			z-index: 2
 			padding: 20px 0 200px
 			letter-spacing: 3px
+			+media-breakpoint-down(lg)
+				font-size: 40px
 			&:after,
 			&:before
 				position: absolute
@@ -212,9 +219,11 @@ a
 .row__section
 	padding: 100px 0
 .product
-
+	+media-breakpoint-down(lg)
+		padding: 180px 0 100px
 	&__btn_wrapper
-		text-align: center
+		text-align: left
+		padding-left: 60px
 	&__list
 
 	&__item
@@ -233,7 +242,7 @@ a
 	&__name
 		text-transform: uppercase
 		letter-spacing: 3px
-		font-size: 28px
+		font-size: 24px
 		a
 			color: #000
 			transition: .2s
@@ -243,7 +252,7 @@ a
 	&__description
 		color: $accent
 		line-height: 1.2
-		font-size: 15x
+		font-size: 15px
 
 
 	&__img__wrapper
@@ -278,6 +287,8 @@ a
 		right: -110px
 		z-index: 3
 		transition: .3s
+		+media-breakpoint-down(lg)
+			bottom: -4em
 		&:hover
 			transform: scale(1.1)
 		img
@@ -294,6 +305,8 @@ a
 		bottom: -22rem
 		left: 0
 		width: 300px
+		+media-breakpoint-down(xxl)
+			left: -100px
 	&_img
 		margin-top: -23em
 	&_row
@@ -325,6 +338,8 @@ a
 		bottom: -20rem
 		right: 0
 		width: 400px
+		+media-breakpoint-down(xxl)
+			width: 250px
 
 .button-wrapper
 	text-align: center
@@ -344,12 +359,13 @@ a
 
 	&__item
 		&:not(:last-child)
-			margin-right: 20px
+			margin-right: 10px
 	&__link
 		color: lighten($accent,20)
 		display: inline-block
 		font-size: 22px
 		transition: .3s
+		padding: 5px
 		&:hover
 			color: $accent-2
 /*==========  user style  ==========*/
