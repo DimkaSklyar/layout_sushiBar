@@ -43,6 +43,8 @@ a
 		font-size: 14px
 		li:first-child
 			padding-bottom: 20px
+			+media-breakpoint-down(md)
+				padding-bottom: 0
 		a
 			color: $accent
 			&:hover
@@ -70,7 +72,9 @@ a
 .logo
 	display: flex
 	align-items: center
-
+	&__img
+		img
+			width: 90%
 	&__title
 		h1
 			font-weight: 300
@@ -78,8 +82,12 @@ a
 			text-transform: uppercase
 			margin-left: 20px
 			color: #000
+			white-space: nowrap
 			+media-breakpoint-down(lg)
 				font-size: 22px
+			+media-breakpoint-down(md)
+				margin-left: 5px
+				font-size: 18px
 
 .bottom-logo
 	flex-direction: column
@@ -93,6 +101,8 @@ a
 	&__item
 		&:not(:first-child)
 			margin-left: 25px
+			+media-breakpoint-down(md)
+				margin-left: 15px
 
 	&__link
 		display: inline-block
@@ -100,6 +110,8 @@ a
 		color: $accent
 		padding: 15px 0
 		position: relative
+		+media-breakpoint-down(md)
+			font-size: 11px
 		&:after
 			position: absolute
 			content: ''
@@ -133,6 +145,8 @@ a
 	text-align: center
 	text-transform: uppercase
 	padding: 60px 0
+	+media-breakpoint-down(md)
+		padding: 0 0 60px
 
 	.head-board
 		position: relative
@@ -159,6 +173,8 @@ a
 				border: 3px solid #000
 				left: 27%
 				right: 27%
+				+media-breakpoint-down(md)
+					display: none
 			&:after
 				top: 0
 				height: 15%
@@ -173,13 +189,21 @@ a
 			left: 50%
 			top: 35%
 			transform: translateX(-50%)
-		
+			+media-breakpoint-down(md)
+				top: 50%
+			img
+				+media-breakpoint-down(md)
+					height: 100%
+				
 			&-2
 				position: absolute
 				left: 51.4%
 				top: 62.5%
 				transform: translateX(-50%)
 				z-index: 3
+				+media-breakpoint-down(md)
+					left: 52%
+					top: 75.5%
 
 .section-page
 	padding: 180px 0
@@ -324,6 +348,8 @@ a
 		+media-breakpoint-down(lg)
 			height: 450px
 			margin-top: -13em
+			+media-breakpoint-down(md)
+				margin-top: -6em
 	&_row
 		padding: 60px 0
 
@@ -386,6 +412,13 @@ a
 		padding: 5px
 		&:hover
 			color: $accent-2
+.address
+	+media-breakpoint-down(md)
+		text-align: center
+		margin-bottom: 50px
+.container
+	+media-breakpoint-down(md)
+		width: 100%
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end

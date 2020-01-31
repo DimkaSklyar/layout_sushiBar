@@ -8491,6 +8491,12 @@ a:hover {
   padding-bottom: 20px;
 }
 
+@media (max-width: 991px) {
+  .list__address li:first-child {
+    padding-bottom: 0;
+  }
+}
+
 .list__address a {
   color: #7c8a97;
 }
@@ -8528,17 +8534,29 @@ a:hover {
   align-items: center;
 }
 
+.logo__img img {
+  width: 90%;
+}
+
 .logo__title h1 {
   font-weight: 300;
   font-size: 24px;
   text-transform: uppercase;
   margin-left: 20px;
   color: #000;
+  white-space: nowrap;
 }
 
 @media (max-width: 1199px) {
   .logo__title h1 {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .logo__title h1 {
+    margin-left: 5px;
+    font-size: 18px;
   }
 }
 
@@ -8560,12 +8578,24 @@ a:hover {
   margin-left: 25px;
 }
 
+@media (max-width: 991px) {
+  .navigation__item:not(:first-child) {
+    margin-left: 15px;
+  }
+}
+
 .navigation__link {
   display: inline-block;
   font-size: 13px;
   color: #7c8a97;
   padding: 15px 0;
   position: relative;
+}
+
+@media (max-width: 991px) {
+  .navigation__link {
+    font-size: 11px;
+  }
 }
 
 .navigation__link:after {
@@ -8611,6 +8641,12 @@ a:hover {
   padding: 60px 0;
 }
 
+@media (max-width: 991px) {
+  .middle-header {
+    padding: 0 0 60px;
+  }
+}
+
 .middle-header .head-board {
   position: relative;
 }
@@ -8646,6 +8682,12 @@ a:hover {
   right: 27%;
 }
 
+@media (max-width: 991px) {
+  .middle-header .head-board__header:after, .middle-header .head-board__header:before {
+    display: none;
+  }
+}
+
 .middle-header .head-board__header:after {
   top: 0;
   height: 15%;
@@ -8665,12 +8707,31 @@ a:hover {
   transform: translateX(-50%);
 }
 
+@media (max-width: 991px) {
+  .middle-header .head-board__img {
+    top: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .middle-header .head-board__img img {
+    height: 100%;
+  }
+}
+
 .middle-header .head-board__img-2 {
   position: absolute;
   left: 51.4%;
   top: 62.5%;
   transform: translateX(-50%);
   z-index: 3;
+}
+
+@media (max-width: 991px) {
+  .middle-header .head-board__img-2 {
+    left: 52%;
+    top: 75.5%;
+  }
 }
 
 .section-page {
@@ -8893,6 +8954,12 @@ a:hover {
   }
 }
 
+@media (max-width: 1199px) and (max-width: 991px) {
+  .service_img {
+    margin-top: -6em;
+  }
+}
+
 .service_row {
   padding: 60px 0;
 }
@@ -8976,6 +9043,19 @@ a:hover {
 
 .social__link:hover {
   color: #f64d00;
+}
+
+@media (max-width: 991px) {
+  .address {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
 }
 
 /*==========  user style  ==========*/
