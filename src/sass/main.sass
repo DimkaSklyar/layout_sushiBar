@@ -3,13 +3,12 @@
 @import "libs"
 
 /*==========  user style  ==========*/
-html
-	overflow-x: hidden
 
 body
 	color: #000
 	font-family: 'Montserrat', sans-serif
-	min-width: 380px
+	min-width: 600px
+	overflow-x: hidden
 
 
 a
@@ -71,9 +70,13 @@ a
 .top-header
 	padding: 20px 15px
 	position: relative
+	+media-breakpoint-down(sm)
+		padding: 20px 15px 0 15px
 .logo
 	display: flex
 	align-items: center
+	+media-breakpoint-down(sm)
+		flex-direction: column-reverse
 	&__link
 		display: inline-block
 	&__img
@@ -92,6 +95,10 @@ a
 			+media-breakpoint-down(md)
 				margin-left: 5px
 				font-size: 18px
+	&__wrapper
+		+media-breakpoint-down(sm)
+			text-align: center
+			margin-top: 55px
 
 .bottom-logo
 	flex-direction: column
@@ -127,6 +134,10 @@ a
 			padding-right: 0
 			padding-top: 30px
 			padding-bottom: 30px
+			transition: .4s
+		&.hidden
+			+media-breakpoint-down(sm)
+				left: -50%
 
 	&__link
 		display: inline-block
@@ -246,6 +257,9 @@ a
 				+media-breakpoint-down(md)
 					left: 52%
 					top: 75.5%
+				+media-breakpoint-down(sm)
+					left: 53%
+					top: 72.5%
 
 .section-page
 	padding: 180px 0
@@ -253,6 +267,8 @@ a
 .section__header
 	text-transform: uppercase
 	display: inline-block
+	+media-breakpoint-down(sm)
+		display: block
 	&__text
 		display: block
 		font-weight: 300
@@ -267,6 +283,8 @@ a
 		text-align: center
 		+media-breakpoint-down(lg)
 			font-size: 40px
+		+media-breakpoint-down(sm)
+			font-size: 25px
 		&:after,
 		&:before
 			position: absolute
@@ -292,15 +310,29 @@ a
 		justify-content: center
 	&_left
 		text-align: left
+		+media-breakpoint-down(sm)
+			text-align: center
 .row__section
 	padding: 100px 0
+	+media-breakpoint-down(sm)
+		padding: 0
 .product
 	+media-breakpoint-down(lg)
 		padding: 180px 0 100px
+	+media-breakpoint-down(sm)
+		padding: 180px 0 40px
 	&__btn_wrapper
 		text-align: left
 		padding-left: 60px
-	&__list
+		+media-breakpoint-down(sm)
+			text-align: center
+			padding-left: 0
+	&__img
+		+media-breakpoint-down(sm)
+			margin: 15px 0
+		&:first-child
+			+media-breakpoint-down(sm)
+				margin-bottom: 0
 
 	&__item
 		position: relative
@@ -333,11 +365,17 @@ a
 
 	&__img__wrapper
 		margin-top: 90px
+		+media-breakpoint-down(sm)
+			margin-top: 25px
+			margin-bottom: 90px
 	&__img_main
 		float: right
 		position: relative
 		transition: .3s
 		z-index: 2
+		+media-breakpoint-down(sm)
+			float: none
+			width: 100%
 		&:hover
 			transform: scale(1.1)
 	&__img_left
@@ -346,6 +384,11 @@ a
 		top: -20px
 		z-index: 3
 		transition: .3s
+		+media-breakpoint-down(sm)
+			position: static
+		img
+			+media-breakpoint-down(sm)
+				width: 100%
 		&:hover
 			transform: scale(1.1)
 	&__img_right
@@ -354,6 +397,11 @@ a
 		right: -80px
 		z-index: 0
 		transition: .3s
+		+media-breakpoint-down(sm)
+			position: static
+		img
+			+media-breakpoint-down(sm)
+				width: 100%
 		&:hover
 			transform: scale(1.1)
 			z-index: 3
@@ -365,14 +413,19 @@ a
 		transition: .3s
 		+media-breakpoint-down(lg)
 			bottom: -4em
+		+media-breakpoint-down(sm)
+			position: static
 		&:hover
 			transform: scale(1.1)
 		img
 			width: 600px
+			+media-breakpoint-down(sm)
+				width: 100%
 
 .service
 	padding: 50px 0
 	position: relative
+	overflow: hidden
 	&:before
 		position: absolute
 		content: ''
@@ -392,8 +445,13 @@ a
 			margin-top: -13em
 			+media-breakpoint-down(md)
 				margin-top: -6em
+			+media-breakpoint-down(sm)
+				margin-left: 5em
 	&_row
 		padding: 60px 0
+		+media-breakpoint-down(sm)
+			flex-direction: column-reverse
+			padding: 100px 0 20px
 
 .form
 	display: flex
@@ -401,6 +459,8 @@ a
 	justify-content: space-between
 	&__input
 		width: 48%
+		+media-breakpoint-down(sm)
+			width: 100%
 	&__textarea
 		width: 100%
 	&__input,
@@ -426,6 +486,8 @@ a
 		+media-breakpoint-down(lg)
 			width: 150px
 			top: -50rem
+		+media-breakpoint-down(sm)
+			width: 70px
 
 .button-wrapper
 	text-align: center
@@ -461,6 +523,35 @@ a
 .container
 	+media-breakpoint-down(md)
 		width: 100%
+	.row
+		+media-breakpoint-down(md)
+		margin-left: 0
+		margin-right: 0
+
+.mobile-header
+	background-color: #fff
+	position: fixed
+	width: 100%
+	z-index: 9999
+	display: none
+	padding: 20px 15px
+	height: 60px
+	align-items: center
+	box-shadow: 0px 5px 5px 0 rgba(0,0,0,.1)
+	+media-breakpoint-down(sm)
+		display: flex
+	&__header
+		text-align: center
+		width: calc(100% - 50px)
+		margin-bottom: 0
+	.menu-btn-toggle
+		background-color: transparent
+		border: none
+		outline: none 0
+		font-size: 26px
+		font-weight: bold
+		width: 24px
+		cursor: pointer
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
