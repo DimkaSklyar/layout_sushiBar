@@ -8446,6 +8446,7 @@ html {
 body {
   color: #000;
   font-family: 'Montserrat', sans-serif;
+  min-width: 380px;
 }
 
 a:hover {
@@ -8527,11 +8528,16 @@ a:hover {
 
 .top-header {
   padding: 20px 15px;
+  position: relative;
 }
 
 .logo {
   display: flex;
   align-items: center;
+}
+
+.logo__link {
+  display: inline-block;
 }
 
 .logo__img img {
@@ -8572,6 +8578,13 @@ a:hover {
 .navigation {
   justify-content: flex-end;
   margin-top: -10px;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .navigation {
+    flex-direction: column;
+  }
 }
 
 .navigation__item:not(:first-child) {
@@ -8584,17 +8597,49 @@ a:hover {
   }
 }
 
+@media (max-width: 767px) {
+  .navigation__item:not(:first-child) {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation__wrapper {
+    box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.99);
+    top: 50px;
+    z-index: 999;
+    width: auto;
+    height: 100%;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
 .navigation__link {
   display: inline-block;
   font-size: 13px;
   color: #7c8a97;
   padding: 15px 0;
   position: relative;
+  transition: 0.2s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 @media (max-width: 991px) {
   .navigation__link {
     font-size: 11px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation__link {
+    display: block;
+    padding: 15px 20px 15px 30px;
+    font-size: 14px;
   }
 }
 
@@ -8610,8 +8655,21 @@ a:hover {
   transition: .3s;
 }
 
+@media (max-width: 767px) {
+  .navigation__link:after {
+    display: none;
+  }
+}
+
 .navigation__link:hover {
   color: #f64d00;
+}
+
+@media (max-width: 767px) {
+  .navigation__link:hover {
+    color: #fff;
+    background-color: #f64d00;
+  }
 }
 
 .navigation__link:hover:after {
@@ -8621,6 +8679,13 @@ a:hover {
 
 .navigation__link__active {
   color: #f64d00;
+}
+
+@media (max-width: 767px) {
+  .navigation__link__active {
+    color: #fff;
+    background-color: #f64d00;
+  }
 }
 
 .navigation__link__active:after {
@@ -8658,6 +8723,13 @@ a:hover {
   font-weight: 300;
 }
 
+@media (max-width: 767px) {
+  .middle-header .head-board__text {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+
 .middle-header .head-board__header {
   font-size: 56px;
   color: #f64d00;
@@ -8670,6 +8742,12 @@ a:hover {
 @media (max-width: 1199px) {
   .middle-header .head-board__header {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .middle-header .head-board__header {
+    line-height: 1.2;
   }
 }
 
