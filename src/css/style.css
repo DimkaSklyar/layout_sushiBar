@@ -8523,6 +8523,36 @@ a:hover {
   background-size: contain;
 }
 
+.page-header__contacts {
+  padding-bottom: 106px;
+}
+
+@media (max-width: 991px) {
+  .page-header__contacts {
+    padding-bottom: 0;
+  }
+}
+
+.page-header__contacts:before {
+  background: url("../img/bg-head-1.png") no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  background-position: top;
+}
+
+@media (max-width: 767px) {
+  .page-header__contacts:before {
+    content: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header__contacts .logo__wrapper {
+    margin-top: 100px;
+  }
+}
+
 .top-header {
   padding: 20px 15px;
   position: relative;
@@ -9327,6 +9357,69 @@ a:hover {
   font-weight: bold;
   width: 24px;
   cursor: pointer;
+}
+
+.other-page-main .section-page {
+  padding: 100px 0;
+}
+
+@media (max-width: 767px) {
+  .other-page-main .section-page {
+    padding: 40px 0;
+  }
+}
+
+.other-page-main .contact:before {
+  top: -23.944444rem;
+  height: 73em;
+  width: 200px;
+}
+
+@media (min-width: 1480px) {
+  .other-page-main .contact:before {
+    background: url("../img/bg-right.png");
+    background-size: contain;
+    top: -31.94444444rem;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    height: 81em;
+    width: 393px;
+    z-index: -1;
+  }
+}
+
+.map {
+  position: relative;
+}
+
+.map:before {
+  position: absolute;
+  content: '';
+  background: url(../img/bg-left.png) no-repeat;
+  top: 30em;
+  bottom: -43em;
+  left: -5em;
+  width: 300px;
+  z-index: -1;
+  left: 0;
+}
+
+@media (max-width: 1199px) {
+  .map:before {
+    left: -200px;
+  }
+}
+
+.map__container {
+  padding: 60px 0 20px;
+}
+
+.text-default-dark {
+  color: #464646;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*==========  user style  ==========*/
