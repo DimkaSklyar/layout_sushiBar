@@ -366,6 +366,7 @@ a
 		text-transform: uppercase
 		letter-spacing: 3px
 		font-size: 24px
+		white-space: nowrap
 		a
 			color: #000
 			transition: .2s
@@ -614,6 +615,129 @@ a
 	font-size: 18px
 	font-weight: 400
 	font-family: 'Roboto Condensed', sans-serif;
+
+
+
+.about
+
+	&_p
+		color: #3d3d3d
+		font-size: 15px
+		font-weight: 500
+		line-height: 1.3
+		+media-breakpoint-down(md)
+			text-align: center
+
+.img__wrapper
+	float: right
+	position: relative
+	+media-breakpoint-down(md)
+		float: none
+		margin-bottom: 40px
+	& > img
+		width: 47rem
+		+media-breakpoint-down(xl)
+			width: 40em
+		+media-breakpoint-down(md)
+			width: 100%
+	.top_img
+		position: absolute
+		right: 0
+		+media-breakpoint-down(xxl)
+			bottom: -10em
+		+media-breakpoint-down(xl)
+			bottom: -13em
+			right: -5em
+		+media-breakpoint-down(lg)
+			bottom: -18em
+		+media-breakpoint-down(md)
+			position: static
+			margin-top: 30px
+		img
+			+media-breakpoint-down(xxl)
+				width: 38em
+			+media-breakpoint-down(xl)
+				width: 34em
+			+media-breakpoint-down(md)
+				width: 100%
+				
+
+
+.card-cooks
+	margin-bottom: 30px
+	&__img
+		img
+			width: 100%
+	&__mame
+		+media-breakpoint-down(sm)
+			text-align: center
+
+.cooks_decor
+	margin-top: -3em
+.other-page-main .section-page.about-page
+	padding-bottom: 140px
+	+media-breakpoint-down(lg)
+		padding-bottom: 0
+
+.cooks
+	.contact
+		&:before
+			top: -27.944444rem
+			+media-breakpoint-down(xxl)
+				top: -20.944444rem
+				height: 74em
+				width: 358px
+			+media-breakpoint-down(md)
+				top: 6.055556rem
+			+media-breakpoint-down(sm)
+				content: none
+		.img_wrapper
+			position: relative
+			left: -35px
+			top: -15em
+			+media-breakpoint-down(md)
+				top: 0
+			img
+				float: right
+				+media-breakpoint-down(md)
+					float: none
+					position: relative
+					z-index: -1
+	.page-footer
+		padding-top: 0
+		+media-breakpoint-down(md)
+			padding-top: 100px
+	.service_img
+		height: auto
+		margin-top: -19em
+.delivery__about
+	+media-breakpoint-down(md)
+		text-align: center
+		margin-top: 40px
+	+media-breakpoint-down(sm)
+		margin-top: 0
+	p
+		font-size: 14px
+		color: #3d3d3d
+
+	&_partner
+		display: flex
+		justify-content: center
+		align-items: center
+		a
+			width: 100px
+			height: 100px
+			transition: .3s
+			&:hover
+				transform: scale(1.1)
+			img
+				width: 100%
+
+.about_row
+	+media-breakpoint-down(md)
+		padding-bottom: 0
+	+media-breakpoint-down(sm)
+		padding-top: 60px
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
