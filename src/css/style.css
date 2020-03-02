@@ -8617,6 +8617,13 @@ a:hover {
   align-items: center;
 }
 
+@media (max-width: 991px) {
+  .bottom-logo {
+    margin-bottom: 50px;
+    margin-top: 35px;
+  }
+}
+
 .bottom-logo h1 {
   margin: 0;
 }
@@ -9279,6 +9286,12 @@ a:hover {
   padding: 130px 0 40px;
 }
 
+@media (max-width: 991px) {
+  .copyright {
+    text-align: center;
+  }
+}
+
 .copyright p {
   font-size: 13px;
   color: #7c8a97;
@@ -9642,6 +9655,10 @@ a:hover {
   }
 }
 
+.special .row__section.special {
+  padding-top: 60px;
+}
+
 .special .product__name {
   white-space: pre-wrap;
   line-height: 1;
@@ -9702,6 +9719,12 @@ a:hover {
   }
 }
 
+@media (max-width: 991px) {
+  .special__item .br {
+    display: none;
+  }
+}
+
 .special__item__text {
   position: absolute;
   top: 30%;
@@ -9720,6 +9743,22 @@ a:hover {
   }
 }
 
+@media (max-width: 991px) {
+  .special__item__text {
+    text-align: center;
+    position: inherit;
+    transform: none;
+    top: auto;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .special__item__text {
+    white-space: normal;
+  }
+}
+
 .special__item__text_left {
   left: -25%;
 }
@@ -9727,6 +9766,12 @@ a:hover {
 @media (max-width: 1199px) {
   .special__item__text_left {
     left: -85%;
+  }
+}
+
+@media (max-width: 991px) {
+  .special__item__text_left {
+    left: auto;
   }
 }
 
@@ -9751,16 +9796,41 @@ a:hover {
   overflow: hidden;
 }
 
+@media (max-width: 991px) {
+  .special__item__img {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .special__item__img img {
   height: 100%;
+}
+
+@media (max-width: 767px) {
+  .special__item__img img {
+    width: 100%;
+  }
 }
 
 .special__item__img_right {
   float: right;
 }
 
+@media (max-width: 991px) {
+  .special__item__img_right {
+    float: none;
+  }
+}
+
 .special__item__img_left {
   float: left;
+}
+
+@media (max-width: 991px) {
+  .special__item__img_left {
+    float: none;
+  }
 }
 
 .special__item__img_wrapper {
@@ -9777,8 +9847,41 @@ a:hover {
   border: 2px solid #000;
 }
 
+@media (max-width: 991px) {
+  .special__item__img_wrapper:before {
+    content: none;
+  }
+}
+
 .special__height {
   height: 360px;
+}
+
+@media (max-width: 991px) {
+  .special__height {
+    height: auto;
+  }
+}
+
+.services-page .product__name {
+  white-space: normal;
+}
+
+.services-page .img__wrapper {
+  float: left;
+}
+
+.services-page .img__wrapper img {
+  width: 39em;
+}
+
+.services-page .top_img {
+  top: -20%;
+  left: -20%;
+}
+
+.services-page .top_img img {
+  width: auto;
 }
 
 /*==========  user style  ==========*/

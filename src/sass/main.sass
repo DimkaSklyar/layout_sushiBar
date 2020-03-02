@@ -118,6 +118,9 @@ a
 .bottom-logo
 	flex-direction: column
 	align-items: center
+	+media-breakpoint-down(md)
+		margin-bottom: 50px
+		margin-top: 35px
 	h1
 		margin: 0
 
@@ -510,6 +513,8 @@ a
 .page-footer
 	padding: 130px 0 40px
 .copyright
+	+media-breakpoint-down(md)
+		text-align: center
 	p
 		font-size: 13px
 		color: $accent
@@ -740,6 +745,8 @@ a
 		padding-top: 60px
 
 .special
+	.row__section.special
+		padding-top: 60px
 	.product__name
 		white-space: pre-wrap
 		line-height: 1
@@ -775,6 +782,8 @@ a
 			display: none
 			+media-breakpoint-down(lg)
 				display: block
+			+media-breakpoint-down(md)
+				display: none
 		&__text
 			position: absolute
 			top: 30%
@@ -787,10 +796,20 @@ a
 			padding: 15px 0
 			+media-breakpoint-down(lg)
 				top: 23%
+			+media-breakpoint-down(md)
+				text-align: center
+				position: inherit
+				transform: none
+				top: auto
+				margin-top: 25px
+			+media-breakpoint-down(sm)
+				white-space: normal
 			&_left
 				left: -25%
 				+media-breakpoint-down(lg)
 					left: -85%
+				+media-breakpoint-down(md)
+					left: auto
 			h2
 				color:#f64d00
 				font-size: 45px
@@ -804,12 +823,21 @@ a
 		&__img
 			height: 100%
 			overflow: hidden
+			+media-breakpoint-down(md)
+				display: flex
+				justify-content: center
 			img
 				height: 100%
+				+media-breakpoint-down(sm)
+					width: 100%
 			&_right
 				float: right
+				+media-breakpoint-down(md)
+					float: none
 			&_left
 				float: left
+				+media-breakpoint-down(md)
+					float: none
 
 			&_wrapper
 				position: relative
@@ -821,9 +849,28 @@ a
 					right: 0
 					left: 0
 					border: 2px solid #000
+					+media-breakpoint-down(md)
+						content: none
 
 	&__height
 		height: 360px
+		+media-breakpoint-down(md)
+			height: auto
+
+
+.services-page
+	.product__name
+		white-space: normal
+	.img__wrapper
+		float: left
+		img
+			width: 39em
+	.top_img
+		top: -20%
+		left: -20%
+		img
+			width: auto
+
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
