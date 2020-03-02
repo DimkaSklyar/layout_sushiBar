@@ -753,6 +753,8 @@ a
 			top: -46rem
 			bottom: 1rem
 			left: -130px
+			+media-breakpoint-down(lg)
+				content: none
 
 	.page-footer
 		position: relative
@@ -765,8 +767,14 @@ a
 			right: 0
 			width: 400px
 			width: 250px
+			+media-breakpoint-down(lg)
+				content: none
 	&__item
 		margin-bottom: 40px
+		.br
+			display: none
+			+media-breakpoint-down(lg)
+				display: block
 		&__text
 			position: absolute
 			top: 30%
@@ -777,8 +785,12 @@ a
 			background: #fff
 			line-height: 1
 			padding: 15px 0
+			+media-breakpoint-down(lg)
+				top: 23%
 			&_left
 				left: -25%
+				+media-breakpoint-down(lg)
+					left: -85%
 			h2
 				color:#f64d00
 				font-size: 45px

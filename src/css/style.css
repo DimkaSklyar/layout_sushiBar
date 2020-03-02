@@ -9661,6 +9661,12 @@ a:hover {
   left: -130px;
 }
 
+@media (max-width: 1199px) {
+  .special .service:before {
+    content: none;
+  }
+}
+
 .special .page-footer {
   position: relative;
 }
@@ -9676,8 +9682,24 @@ a:hover {
   width: 250px;
 }
 
+@media (max-width: 1199px) {
+  .special .page-footer:before {
+    content: none;
+  }
+}
+
 .special__item {
   margin-bottom: 40px;
+}
+
+.special__item .br {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .special__item .br {
+    display: block;
+  }
 }
 
 .special__item__text {
@@ -9692,8 +9714,20 @@ a:hover {
   padding: 15px 0;
 }
 
+@media (max-width: 1199px) {
+  .special__item__text {
+    top: 23%;
+  }
+}
+
 .special__item__text_left {
   left: -25%;
+}
+
+@media (max-width: 1199px) {
+  .special__item__text_left {
+    left: -85%;
+  }
 }
 
 .special__item__text h2 {
