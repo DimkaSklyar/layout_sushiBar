@@ -738,6 +738,80 @@ a
 		padding-bottom: 0
 	+media-breakpoint-down(sm)
 		padding-top: 60px
+
+.special
+	.product__name
+		white-space: pre-wrap
+		line-height: 1
+	.product__item
+		&:before
+			top: 13px
+	.product__list
+		margin-top: 60px
+	.service
+		&:before
+			top: -46rem
+			bottom: 1rem
+			left: -130px
+
+	.page-footer
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			background: url(../img/bg-right.png) no-repeat
+			top: -47rem
+			bottom: -3rem
+			right: 0
+			width: 400px
+			width: 250px
+	&__item
+		margin-bottom: 40px
+		&__text
+			position: absolute
+			top: 30%
+			transform: translateY(-50%)
+			white-space: nowrap
+			text-transform: uppercase
+			z-index: 1
+			background: #fff
+			line-height: 1
+			padding: 15px 0
+			&_left
+				left: -25%
+			h2
+				color:#f64d00
+				font-size: 45px
+				cursor: pointer
+				transition: .3s
+				&:hover
+					color: #000
+			p
+				margin-bottom: 5px
+				color: #909090
+		&__img
+			height: 100%
+			overflow: hidden
+			img
+				height: 100%
+			&_right
+				float: right
+			&_left
+				float: left
+
+			&_wrapper
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					bottom: 0
+					right: 0
+					left: 0
+					border: 2px solid #000
+
+	&__height
+		height: 360px
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
