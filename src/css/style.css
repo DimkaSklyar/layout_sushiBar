@@ -9884,6 +9884,37 @@ a:hover {
   width: auto;
 }
 
+.corparative__header {
+  text-transform: uppercase;
+}
+
+.corparative__p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.services-page .service_img {
+  width: 43em;
+}
+
+.services-page .contact .img_wrapper {
+  float: right;
+}
+
+.services-page .contact .img_wrapper img {
+  margin-top: -11em;
+  width: 26em;
+}
+
+.services-page .other-page-main .contact:before {
+  top: -29.944444rem;
+}
+
+.fw-b {
+  font-weight: bold;
+  font-size: 14px;
+}
+
 /*==========  user style  ==========*/
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
