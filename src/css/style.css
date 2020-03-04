@@ -9893,8 +9893,49 @@ a:hover {
   font-size: 14px;
 }
 
+.services-page .cooks_decor {
+  margin-top: -20em;
+}
+
+.services-page .service-section-1 {
+  padding-bottom: 0;
+}
+
+.services-page .service-section-1 .row__section {
+  padding-bottom: 40px;
+}
+
+@media (max-width: 1199px) {
+  .services-page .serv_img {
+    float: right;
+  }
+}
+
+@media (max-width: 1199px) {
+  .services-page .serv_img + img {
+    width: 36em;
+  }
+}
+
+.services-page .service:before {
+  top: -14rem;
+}
+
 .services-page .service_img {
-  width: 43em;
+  width: 54em;
+}
+
+@media (max-width: 1479px) {
+  .services-page .service_img {
+    width: 43em;
+  }
+}
+
+@media (max-width: 1199px) {
+  .services-page .service_img {
+    height: auto;
+    width: auto;
+  }
 }
 
 .services-page .contact .img_wrapper {
@@ -9902,8 +9943,22 @@ a:hover {
 }
 
 .services-page .contact .img_wrapper img {
-  margin-top: -11em;
-  width: 26em;
+  margin-top: -17em;
+  width: 36em;
+  margin-right: 6em;
+}
+
+@media (max-width: 1479px) {
+  .services-page .contact .img_wrapper img {
+    margin-top: -11em;
+    width: 23em;
+  }
+}
+
+@media (max-width: 1199px) {
+  .services-page .contact .img_wrapper img {
+    margin-right: 0;
+  }
 }
 
 .services-page .other-page-main .contact:before {

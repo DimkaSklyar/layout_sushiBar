@@ -880,14 +880,40 @@ a
 		font-size: 14px
 
 .services-page
+	.cooks_decor
+		margin-top: -20em
+	.service-section-1
+		padding-bottom: 0
+		.row__section
+			padding-bottom: 40px
+	.serv_img
+		+media-breakpoint-down(lg)
+			float: right
+		& + img
+			+media-breakpoint-down(lg)
+				width: 36em
+	.service:before
+		top: -14rem
 	.service_img
-		width: 43em
+		width: 54em
+		+media-breakpoint-down(xl)
+			width: 43em
+		+media-breakpoint-down(lg)
+			height: auto
+			width: auto
 	.contact
 		.img_wrapper
 			float: right
 			img
-				margin-top: -11em
-				width: 26em
+				margin-top: -17em
+				width: 36em
+				margin-right: 6em
+				+media-breakpoint-down(xl)
+					margin-top: -11em
+					width: 23em
+				+media-breakpoint-down(lg)
+					margin-right: 0
+
 	.other-page-main .contact:before
 		top: -29.944444rem
 .fw-b
