@@ -9893,6 +9893,18 @@ a:hover {
   font-size: 14px;
 }
 
+@media (max-width: 1199px) {
+  .services-page .product__item {
+    line-height: 1;
+  }
+}
+
+@media (max-width: 1199px) {
+  .services-page .product__item:before {
+    top: 13px;
+  }
+}
+
 .services-page .cooks_decor {
   margin-top: -20em;
 }
@@ -9914,6 +9926,12 @@ a:hover {
 @media (max-width: 1199px) {
   .services-page .serv_img + img {
     width: 36em;
+  }
+}
+
+@media (max-width: 991px) {
+  .services-page .serv_img + img {
+    width: 100%;
   }
 }
 

@@ -880,6 +880,12 @@ a
 		font-size: 14px
 
 .services-page
+	.product__item
+		+media-breakpoint-down(lg)
+			line-height: 1
+	.product__item:before
+		+media-breakpoint-down(lg)
+			top: 13px
 	.cooks_decor
 		margin-top: -20em
 	.service-section-1
@@ -892,6 +898,8 @@ a
 		& + img
 			+media-breakpoint-down(lg)
 				width: 36em
+			+media-breakpoint-down(md)
+				width: 100%
 	.service:before
 		top: -14rem
 	.service_img
