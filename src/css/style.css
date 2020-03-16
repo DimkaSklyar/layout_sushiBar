@@ -9875,6 +9875,12 @@ a:hover {
   width: 39em;
 }
 
+@media (max-width: 991px) {
+  .services-page .img__wrapper img {
+    width: 100%;
+  }
+}
+
 .services-page .top_img {
   top: -20%;
   left: -20%;
@@ -9882,6 +9888,12 @@ a:hover {
 
 .services-page .top_img img {
   width: auto;
+}
+
+@media (max-width: 991px) {
+  .services-page .top_img img {
+    width: 100%;
+  }
 }
 
 .corparative__header {
@@ -9923,6 +9935,12 @@ a:hover {
   }
 }
 
+@media (max-width: 991px) {
+  .services-page .serv_img {
+    float: none;
+  }
+}
+
 @media (max-width: 1199px) {
   .services-page .serv_img + img {
     width: 36em;
@@ -9946,6 +9964,7 @@ a:hover {
 @media (max-width: 1479px) {
   .services-page .service_img {
     width: 43em;
+    margin-top: -12em;
   }
 }
 
@@ -9981,6 +10000,13 @@ a:hover {
 
 .services-page .other-page-main .contact:before {
   top: -29.944444rem;
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .services-page .other-page-main .contact:before {
+    top: -19.944444rem;
+  }
 }
 
 .fw-b {

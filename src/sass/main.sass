@@ -865,11 +865,15 @@ a
 		float: left
 		img
 			width: 39em
+			+media-breakpoint-down(md)
+				width: 100%
 	.top_img
 		top: -20%
 		left: -20%
 		img
 			width: auto
+			+media-breakpoint-down(md)
+				width: 100%
 
 
 .corparative
@@ -895,6 +899,8 @@ a
 	.serv_img
 		+media-breakpoint-down(lg)
 			float: right
+		+media-breakpoint-down(md)
+			float: none
 		& + img
 			+media-breakpoint-down(lg)
 				width: 36em
@@ -906,6 +912,7 @@ a
 		width: 54em
 		+media-breakpoint-down(xl)
 			width: 43em
+			margin-top: -12em
 		+media-breakpoint-down(lg)
 			height: auto
 			width: auto
@@ -924,6 +931,9 @@ a
 
 	.other-page-main .contact:before
 		top: -29.944444rem
+		z-index: -1
+		+media-breakpoint-down(md)
+			top: -19.944444rem
 .fw-b
 	font-weight: bold
 	font-size: 14px
