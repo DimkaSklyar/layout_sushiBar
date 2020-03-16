@@ -937,6 +937,55 @@ a
 .fw-b
 	font-weight: bold
 	font-size: 14px
+
+.menu-page
+	.product__name
+		white-space: normal
+		cursor: pointer
+		transition: .3s
+		&:hover
+			color: $accent-2
+	.product__item
+		position: relative
+		padding-left: 65px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		.price
+			position: absolute
+			width: 100px
+			height: 50px
+			top: 42px
+			left: 0
+			font-weight: 500
+	.menu-item__header
+		font-size: 69px
+		line-height: 1
+		letter-spacing: .14em
+		color: #f64d00
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 30px
+		+media-breakpoint-down(lg)
+			font-size: 48px
+	.row__section
+		padding-top: 50px
+	.product__img
+		width: 450px
+		+media-breakpoint-down(lg)
+			width: 350px
+		+media-breakpoint-down(md)
+			width: 300px
+		+media-breakpoint-down(sm)
+			width: auto
+		img
+			width: 100%
+	.section-menu
+		padding: 40px 0
+	.other-page-main .section-page
+		padding-bottom: 0
+	.row__section
+		padding-bottom: 0
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
