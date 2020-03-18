@@ -8553,10 +8553,18 @@ a:hover {
       background-position: top; }
       @media (max-width: 767px) {
         .page-header__contacts:before {
-          content: none; } }
+          position: absolute;
+          content: '';
+          background: url("../img/bg-head.png") no-repeat;
+          background-position: 0 0;
+          top: 0;
+          bottom: 0;
+          left: 50px;
+          right: 50px;
+          background-size: contain; } }
     @media (max-width: 767px) {
       .page-header__contacts .logo__wrapper {
-        margin-top: 100px; } }
+        margin-top: 60px; } }
 
 .top-header {
   padding: 20px 15px;
@@ -8757,10 +8765,14 @@ a:hover {
         top: 62.5%;
         transform: translateX(-50%);
         z-index: 3; }
+        @media (max-width: 1199px) {
+          .middle-header .head-board__img-2 {
+            left: 52%;
+            top: 64%; } }
         @media (max-width: 991px) {
           .middle-header .head-board__img-2 {
             left: 52%;
-            top: 75.5%; } }
+            top: 80.5%; } }
         @media (max-width: 767px) {
           .middle-header .head-board__img-2 {
             left: 53%;
@@ -9501,6 +9513,13 @@ a:hover {
   font-weight: bold;
   font-size: 14px; }
 
+.product__name {
+  white-space: normal;
+  cursor: pointer;
+  transition: .3s; }
+  .product__name:hover {
+    color: #f64d00; }
+
 .menu-page .product__name {
   white-space: normal;
   cursor: pointer;
@@ -9559,6 +9578,9 @@ a:hover {
 
 .menu-page .row__section {
   padding-bottom: 0; }
+
+.mfp-title {
+  padding-left: 20px; }
 
 /*==========  user style  ==========*/
 /*==========  Desktop First  ==========*/

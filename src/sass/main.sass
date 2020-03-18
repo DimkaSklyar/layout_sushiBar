@@ -77,10 +77,18 @@ a
 			right: 0
 			background-position: top
 			+media-breakpoint-down(sm)
-				content: none
+				position: absolute
+				content: ''
+				background: url('../img/bg-head.png') no-repeat
+				background-position: 0 0
+				top: 0
+				bottom: 0
+				left: 50px
+				right: 50px
+				background-size: contain
 		.logo__wrapper
 			+media-breakpoint-down(sm)
-				margin-top: 100px
+				margin-top: 60px
 
 .top-header
 	padding: 20px 15px
@@ -272,9 +280,12 @@ a
 				top: 62.5%
 				transform: translateX(-50%)
 				z-index: 3
+				+media-breakpoint-down(lg)
+					left: 52%
+					top: 64%
 				+media-breakpoint-down(md)
 					left: 52%
-					top: 75.5%
+					top: 80.5%
 				+media-breakpoint-down(sm)
 					left: 53%
 					top: 72.5%
@@ -937,7 +948,12 @@ a
 .fw-b
 	font-weight: bold
 	font-size: 14px
-
+.product__name
+	white-space: normal
+	cursor: pointer
+	transition: .3s
+	&:hover
+		color: $accent-2
 .menu-page
 	.product__name
 		white-space: normal
@@ -986,6 +1002,9 @@ a
 		padding-bottom: 0
 	.row__section
 		padding-bottom: 0
+
+.mfp-title
+	padding-left: 20px
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
